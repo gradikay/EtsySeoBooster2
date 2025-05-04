@@ -129,13 +129,13 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-primary-900 via-dark-800 to-secondary-900 min-h-screen font-sans text-dark-100">
-      <div className="container mx-auto px-4 py-8 max-w-7xl">
+    <div className="min-h-screen font-sans bg-background text-foreground">
+      <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
         <Header />
 
         {/* Main content area */}
-        <div className="flex flex-col lg:flex-row gap-6 mb-12">
+        <div className="flex flex-col lg:flex-row gap-8 mb-16">
           {/* Input Form */}
           <InputForm
             onSubmit={handleGenerateTags}
