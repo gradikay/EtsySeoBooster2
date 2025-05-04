@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FormData } from "@/lib/tagGenerator";
 
 interface InputFormProps {
@@ -38,14 +38,17 @@ const InputForm: React.FC<InputFormProps> = ({
   };
 
   return (
-    <section className="lg:w-1/2 glass-card rounded-2xl p-6 md:p-8">
-      <h2 className="text-2xl font-medium mb-6 text-white">Generate Tags</h2>
+    <section className="lg:w-1/2 card-gradient">
+      <div className="flex items-center mb-6">
+        <div className="w-1 h-8 bg-primary rounded-full mr-3"></div>
+        <h2 className="text-2xl font-semibold text-foreground">Generate Tags</h2>
+      </div>
 
       <form id="seoForm" className="space-y-6" onSubmit={handleSubmit}>
         <div className="space-y-2">
           <label
             htmlFor="productTitle"
-            className="block text-sm font-medium text-white"
+            className="block text-sm font-medium text-foreground"
           >
             Product Title
           </label>
@@ -53,7 +56,7 @@ const InputForm: React.FC<InputFormProps> = ({
             type="text"
             id="productTitle"
             name="productTitle"
-            className="w-full px-4 py-3 bg-dark-800 text-white border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 input-transition"
+            className="input-field"
             placeholder="Enter your product title"
             required
             value={formData.productTitle}
@@ -64,14 +67,14 @@ const InputForm: React.FC<InputFormProps> = ({
         <div className="space-y-2">
           <label
             htmlFor="category"
-            className="block text-sm font-medium text-white"
+            className="block text-sm font-medium text-foreground"
           >
             Category
           </label>
           <select
             id="category"
             name="category"
-            className="w-full px-4 py-3 bg-dark-800 text-white border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 input-transition"
+            className="input-field"
             required
             value={formData.category}
             onChange={handleChange}
@@ -94,7 +97,7 @@ const InputForm: React.FC<InputFormProps> = ({
         <div className="space-y-2">
           <label
             htmlFor="description"
-            className="block text-sm font-medium text-white"
+            className="block text-sm font-medium text-foreground"
           >
             Product Description (Optional)
           </label>
@@ -102,7 +105,7 @@ const InputForm: React.FC<InputFormProps> = ({
             id="description"
             name="description"
             rows={4}
-            className="w-full px-4 py-3 bg-dark-800 text-white border border-dark-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 input-transition"
+            className="input-field"
             placeholder="Enter a brief description of your product"
             value={formData.description}
             onChange={handleChange}
@@ -112,17 +115,23 @@ const InputForm: React.FC<InputFormProps> = ({
         <div className="pt-2 flex gap-3">
           <button
             type="submit"
-            className="flex-1 btn-gradient text-white font-medium py-3 px-6 rounded-lg shadow-lg"
+            className="flex-1 btn-primary flex justify-center items-center"
           >
-            <i className="fas fa-tags mr-2"></i> Generate Tags
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+              <line x1="7" y1="7" x2="7.01" y2="7"></line>
+            </svg>
+            Generate Tags
           </button>
 
           <button
             type="button"
-            className="px-4 py-2 bg-dark-700 hover:bg-dark-600 text-white rounded-lg"
+            className="btn-outline"
             onClick={handleClearForm}
           >
-            <i className="fas fa-undo"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 12h18M3 6h18M3 18h18"></path>
+            </svg>
           </button>
         </div>
       </form>
