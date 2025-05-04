@@ -83,22 +83,22 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
       {isLoading && (
         <div className="flex flex-col items-center justify-center py-12">
           <div className="w-12 h-12 border-4 border-primary-300 border-t-primary-600 rounded-full animate-spin mb-4"></div>
-          <p className="text-gray-300">Generating optimized tags...</p>
+          <p className="text-white font-medium">Generating optimized tags...</p>
         </div>
       )}
 
       {!isLoading && tags.length === 0 && (
         <div className="flex flex-col items-center justify-center py-12 text-center">
-          <i className="fas fa-tags text-5xl text-gray-500 mb-4"></i>
-          <p className="text-gray-400 mb-2">No tags generated yet</p>
-          <p className="text-gray-500 text-sm">Fill out the form and click "Generate Tags"</p>
+          <i className="fas fa-tags text-5xl text-gray-300 mb-4"></i>
+          <p className="text-white font-medium mb-2">No tags generated yet</p>
+          <p className="text-gray-300 text-sm">Fill out the form and click "Generate Tags"</p>
         </div>
       )}
 
       {!isLoading && tags.length > 0 && (
         <div id="tags-container">
           <div className="mb-4 pb-2 border-b border-dark-700">
-            <p className="text-sm text-gray-400 mb-2">
+            <p className="text-sm text-white mb-2">
               Etsy allows up to 13 tags per listing. Here are your optimized tags:
             </p>
           </div>
@@ -111,7 +111,7 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
               >
                 <span className="text-white text-sm truncate">{tag}</span>
                 <button
-                  className="text-gray-400 hover:text-white"
+                  className="text-gray-200 hover:text-white"
                   onClick={() => handleCopySingleTag(tag)}
                 >
                   <i className="fas fa-copy"></i>
@@ -124,7 +124,7 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
             <h3 className="text-lg font-medium text-white mb-3">
               Additional Keyword Suggestions
             </h3>
-            <p className="text-sm text-gray-300 mb-2">
+            <p className="text-sm text-white mb-2">
               Consider using these keywords in your title and description:
             </p>
 
@@ -132,7 +132,7 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
               {keywords.map((keyword, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 bg-dark-700 text-gray-300 rounded-full text-xs"
+                  className="px-3 py-1 bg-dark-700 text-white rounded-full text-xs"
                 >
                   {keyword}
                 </span>

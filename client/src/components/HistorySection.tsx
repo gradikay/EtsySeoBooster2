@@ -45,8 +45,8 @@ const HistorySection: React.FC<HistorySectionProps> = ({
 
       {savedSearches.length === 0 && (
         <div id="no-history" className="text-center py-8">
-          <p className="text-gray-400">No saved searches yet</p>
-          <p className="text-gray-500 text-sm mt-2">
+          <p className="text-white font-medium">No saved searches yet</p>
+          <p className="text-gray-300 text-sm mt-2">
             Your saved searches will appear here
           </p>
         </div>
@@ -68,7 +68,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({
                   <h3 className="text-white font-medium truncate">
                     {search.productTitle}
                   </h3>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-gray-200 text-sm">
                     Category: {categoryDisplay}
                   </p>
                 </div>

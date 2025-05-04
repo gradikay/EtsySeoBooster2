@@ -8,7 +8,7 @@ const Header: React.FC = () => {
           Etsy SEO Tag Generator
         </span>
       </h1>
-      <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+      <p className="text-white text-lg max-w-2xl mx-auto font-medium">
         Create optimized tags to improve your product's discoverability on Etsy
       </p>
     </header>

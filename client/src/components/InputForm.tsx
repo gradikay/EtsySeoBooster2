@@ -45,7 +45,7 @@ const InputForm: React.FC<InputFormProps> = ({
         <div className="space-y-2">
           <label
             htmlFor="productTitle"
-            className="block text-sm font-medium text-gray-300"
+            className="block text-sm font-medium text-white"
           >
             Product Title
           </label>
@@ -64,7 +64,7 @@ const InputForm: React.FC<InputFormProps> = ({
         <div className="space-y-2">
           <label
             htmlFor="category"
-            className="block text-sm font-medium text-gray-300"
+            className="block text-sm font-medium text-white"
           >
             Category
           </label>
@@ -94,7 +94,7 @@ const InputForm: React.FC<InputFormProps> = ({
         <div className="space-y-2">
           <label
             htmlFor="description"
-            className="block text-sm font-medium text-gray-300"
+            className="block text-sm font-medium text-white"
           >
             Product Description (Optional)
           </label>

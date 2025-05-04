@@ -13,7 +13,7 @@ const SEOTipsSection: React.FC = () => {
             </div>
             <div className="ml-3">
               <h3 className="text-white font-medium">Use all 13 tags</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-white text-sm">
                 Always utilize all available tag slots to maximize your
                 visibility.
               </p>
@@ -26,7 +26,7 @@ const SEOTipsSection: React.FC = () => {
             </div>
             <div className="ml-3">
               <h3 className="text-white font-medium">Match tags to title</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-white text-sm">
                 Include your most important keywords in both your title and tags.
               </p>
             </div>
@@ -38,7 +38,7 @@ const SEOTipsSection: React.FC = () => {
             </div>
             <div className="ml-3">
               <h3 className="text-white font-medium">Use multi-word tags</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-white text-sm">
                 Tags can include multiple words (up to 20 characters). Utilize
                 this for more specific phrases.
               </p>
@@ -53,7 +53,7 @@ const SEOTipsSection: React.FC = () => {
             </div>
             <div className="ml-3">
               <h3 className="text-white font-medium">Be specific</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-white text-sm">
                 Use specific descriptors rather than generic terms to target
                 interested buyers.
               </p>
@@ -68,7 +68,7 @@ const SEOTipsSection: React.FC = () => {
               <h3 className="text-white font-medium">
                 Consider long-tail keywords
               </h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-white text-sm">
                 These are more specific phrases with less competition but higher
                 conversion rates.
               </p>
@@ -81,7 +81,7 @@ const SEOTipsSection: React.FC = () => {
             </div>
             <div className="ml-3">
               <h3 className="text-white font-medium">Update seasonally</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-white text-sm">
                 Refresh your tags periodically to include seasonal terms and
                 trending keywords.
               </p>
